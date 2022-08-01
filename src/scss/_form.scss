@@ -1,0 +1,41 @@
+form {
+  border-radius: 0.25rem;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(27, 27, 50, 0.8);
+  .personal-information {
+    label,
+    select {
+      display: block;
+    }
+  }
+  .recommend {
+    label {
+      width: fit-content;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      &:last-of-type {
+        display: block;
+        width: 100%;
+      }
+    }
+    input {
+      height: 1rem;
+      width: fit-content;
+    }
+  }
+  .submit-container {
+    text-align: center;
+    input {
+      width: 50%;
+      background: #9400d3;
+      cursor: pointer;
+      border: none;
+      &:hover {
+        background: #800080;
+      }
+    }
+  }
+}
