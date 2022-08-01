@@ -1,3 +1,5 @@
+@use "config";
+
 form {
   border-radius: 0.25rem;
   padding: 2rem;
@@ -9,6 +11,12 @@ form {
     select {
       display: block;
     }
+    &--label {
+      margin-bottom: config.$margin-xs;
+    }
+    // label:last-of-type {
+    //   margin-bottom: 2rem;
+    // }
   }
   .recommend {
     label {
@@ -20,6 +28,12 @@ form {
         display: block;
         width: 100%;
       }
+    }
+    .label-radio:nth-child(4) {
+      margin-bottom: 2rem;
+    }
+    .label-textarea {
+      margin-top: 2rem;
     }
     input {
       height: 1rem;

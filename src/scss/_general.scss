@@ -22,6 +22,7 @@ p {
 
 fieldset {
   border: none;
+  margin-bottom: config.$margin-m;
 }
 
 input,
@@ -46,4 +47,10 @@ legend {
 
 textarea {
   height: 4rem;
+}
+
+@media (max-width: 340px) {
+  html {
+    font-size: 95%;
+  }
 }

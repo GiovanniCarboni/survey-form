@@ -15,15 +15,15 @@
 
     <form action="#">
       <fieldset class="personal-information">
-        <label
+        <label class="personal-information--label"
           ><span>Name</span
           ><input type="text" required placeholder="Enter your name"
         /></label>
-        <label
+        <label class="personal-information--label"
           ><span>Email</span
           ><input type="email" required placeholder="Enter your email"
         /></label>
-        <label
+        <label class="personal-information--label"
           ><span>Age</span
           ><input
             type="number"
@@ -32,7 +32,7 @@
             required
             placeholder="Enter your age"
         /></label>
-        <label
+        <label class="personal-information--label"
           >Which option best describes your current role?
           <select>
             <option value="">Select an option</option>
@@ -45,15 +45,15 @@
       </fieldset>
       <fieldset class="recommend">
           <legend>Would you recommend us to a friend?</legend>
-          <label><input value="definitely" type="radio" name="recommend">Definitely</label>
-          <label><input value="maybe" type="radio" name="recommend">Maybe</label>
-          <label><input type="radio" value="unsure" name="recommend">Not sure</label>
+          <label class="label-radio"><input value="definitely" type="radio" name="recommend">Definitely</label>
+          <label class="label-radio"><input value="maybe" type="radio" name="recommend">Maybe</label>
+          <label class="label-radio"><input type="radio" value="unsure" name="recommend">Not sure</label>
 
           <legend>What would you like to see improved?</legend>
-          <label><input type="checkbox">Projects</label>
-          <label><input type="checkbox">Courses</label>
-          <label><input type="checkbox">Books</label>
-        <label>Any commets or suggestions?
+          <label class="label-checkbox"><input type="checkbox">Projects</label>
+          <label class="label-checkbox"><input type="checkbox">Courses</label>
+          <label class="label-checkbox"><input type="checkbox">Books</label>
+        <label class="label-textarea">Any commets or suggestions?
           <textarea></textarea>
       </fieldset>
       <div class='submit-container'>
