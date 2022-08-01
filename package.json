@@ -1,0 +1,26 @@
+{
+  "name": "survey-form",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiovanniCarboni/survey-form.git"
+  },
+  "author": "Giovanni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiovanniCarboni/survey-form/issues"
+  },
+  "homepage": "https://github.com/GiovanniCarboni/survey-form#readme",
+  "dependencies": {
+    "parcel": "^2.6.2"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2"
+  }
+}
