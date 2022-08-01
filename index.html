@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/scss/main.scss" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 class="title">Survey Form</h1>
+    <p class="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+
+    <form action="#">
+      <fieldset class="personal-information">
+        <label
+          ><span>Name</span
+          ><input type="text" required placeholder="Enter your name"
+        /></label>
+        <label
+          ><span>Email</span
+          ><input type="email" required placeholder="Enter your email"
+        /></label>
+        <label
+          ><span>Age</span
+          ><input
+            type="number"
+            min="16"
+            max="120"
+            required
+            placeholder="Enter your age"
+        /></label>
+        <label
+          >Which option best describes your current role?
+          <select>
+            <option value="">Select an option</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Other</option>
+            <option value="4">Prefer not to say</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset class="fieldset-recommend">
+          <legend>Would you recommend us to a friend?<legend>
+          <label><input value="definitely" type="radio" name="recommend">Definitely</label>
+          <label><input value="maybe" type="radio" name="recommend">Maybe</label>
+          <label><input type="radio" value="unsure" name="recommend">Not sure</label>
+
+          <legend>What would you like to see improved?</legend>
+          <label><input type="checkbox">Projects</label>
+          <label><input type="checkbox">Courses</label>
+          <label><input type="checkbox">Books</label>
+        <label>Any commets or suggestions?
+          <textarea></textarea>
+      </fieldset>
+      <div class='submit-container'>
+        <input type="submit" id="submit" value="Submit">
+        </div>
+    </form>
+  </body>
+</html>
