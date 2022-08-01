@@ -1,3 +1,5 @@
+@use "config";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,6 +10,14 @@ body {
   background: url("https://images.pexels.com/photos/796602/pexels-photo-796602.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
     center;
   background-size: cover;
+  padding: config.$pad-l;
+}
+
+h1 {
+  margin-bottom: config.$margin-s;
+}
+p {
+  margin-bottom: config.$margin-m;
 }
 
 fieldset {
@@ -17,6 +27,7 @@ fieldset {
 input,
 select,
 textarea {
+  padding: config.$pad-s;
   width: 100%;
   height: 2rem;
   border-radius: 0.24rem;
@@ -27,6 +38,10 @@ textarea {
     box-shadow: 0 0 0.1rem 0.3rem rgb(238, 130, 238, 0.8);
     outline: none;
   }
+}
+
+legend {
+  margin-bottom: 1rem;
 }
 
 textarea {

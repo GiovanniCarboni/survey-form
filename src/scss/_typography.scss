@@ -1,5 +1,23 @@
+@use "config";
+
 body {
   font-family: Tahoma, sans-serif;
+}
+
+h1,
+p {
+  text-align: center;
+  color: #1b1b32;
+}
+
+h1 {
+  text-shadow: 1px 0 #f3f3f3, 0 1px #f3f3f3, -1px 0 #f3f3f3, 0 -1px #f3f3f3;
+  letter-spacing: config.$l-sp-s;
+}
+
+p {
+  font-size: config.$f-size-m;
+  letter-spacing: config.$l-sp-xs;
 }
 
 form {
